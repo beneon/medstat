@@ -23,7 +23,8 @@ date | time | content
 
 1. [lect.01 讲义](lect-1/lect-1.pptx)
 2. [lect.01 notebook](lect-1/lect01.ipynb)
-
+3. [lect.02 讲义](lect-2/lect-2.pptx)
+4. [lect.02 notebook](lect-2/lect02.ipynb)
 ## 其他资料
 
 1. [Excel常见公式](cheatsheet/excel常见公式.pdf)
