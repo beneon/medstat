@@ -25,7 +25,11 @@ date | time | content
 2. [lect.01 notebook](lect-1/lect01.ipynb)
 3. [lect.02 讲义](lect-2/lect-2.pptx)
 4. [lect.02 notebook](lect-2/lect02.ipynb)
+5. [第一次作业](https://www.wjx.top/jq/33439204.aspx)
+
+
 ## 其他资料
 
 1. [Excel常见公式](cheatsheet/excel常见公式.pdf)
 2. [anaconda安装过程视频](cheatsheet/anaconda_install.avi)
+3. [n-1是怎么来的](cheatsheet/sigma_n_1.mp4)
