@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body class="markdown-body">
+<h1 id="excel%E5%B8%B8%E8%A7%81%E5%85%AC%E5%BC%8F" data-line="NaN" class="code-line code-line code-line" id="excele5b8b8e8a781e585ace5bc8f-1" id="excele5b8b8e8a781e585ace5bc8f-2">excel常见公式</h1>
+<h2 id="%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BE%93%E5%85%A5" data-line="NaN" class="code-line code-line code-line" id="e585ace5bc8fe79a84e8be93e585a5-1" id="e585ace5bc8fe79a84e8be93e585a5-2">公式的输入</h2>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">在任何一个单元格，先输入<code>=</code>, 输入公式. 输入的过程中会有自动补全的提示, 可以按上下键选择各种建议, 然后按<code>TAB</code>键接受补全</li>
+<li data-line="NaN" class="code-line code-line code-line">复杂的公式往往需要输入很多的括号, 括号要成对</li>
+<li data-line="NaN" class="code-line code-line code-line">有两种方式开始公式的录入, 一种是点选一个单元格以后开始输入, 另外一种是点选一个单元格以后, 再点上方的编辑栏开始公式输入. 这两种方式最主要的区别就是左右方向键的功能会不一样: 第一种方法左右方向键会选取旁边的单元格, 第二种方法, 左右方向键会在输入的公式中移动光标</li>
+</ol>
+<h2 id="%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97" data-line="NaN" class="code-line code-line code-line" id="e59fbae69cace8bf90e7ae97-1" id="e59fbae69cace8bf90e7ae97-2">基本运算</h2>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>v1</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5</td>
+<td>16</td>
+</tr>
+<tr>
+<td>5</td>
+<td>8</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">加<code>=A2+B2</code>,减<code>=A3+B3</code>,乘<code>=A4*B4</code>,除<code>=A5/B5</code></li>
+<li data-line="NaN" class="code-line code-line code-line">取余数<code>=MOD(B2,A2)</code></li>
+<li data-line="NaN" class="code-line code-line code-line">平方<code>=A2^2</code>, 立方<code>=A2^3</code></li>
+<li data-line="NaN" class="code-line code-line code-line">开平方<code>=sqrt(A2)</code></li>
+</ol>
+<h2 id="%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F" data-line="NaN" class="code-line code-line code-line" id="e7bb9fe8aea1e585ace5bc8f-1" id="e7bb9fe8aea1e585ace5bc8f-2">统计公式</h2>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">求平均值: <code>=AVERAGE(A2:A5)</code>, 如果已经转化成了数据表, 可以这么写:<code>=AVERAGE(表1[v1])</code></li>
+<li data-line="NaN" class="code-line code-line code-line">求标准差: 除以n的标准差:<code>=STDEV.P(A2:A5)</code>, 除以n-1的标准差:<code>STDEV.S(A2:A5)</code>.</li>
+<li data-line="NaN" class="code-line code-line code-line">分布曲线类型函数: excel中包含了包括二项分布, 卡方分布, 正态分布, t分布, 等等众多常用概率分布曲线的计算函数. 这类函数一般包含三个类型的公式:
+<ol>
+<li data-line="NaN" class="code-line code-line code-line"><code>.INV</code>: 给定一个概率, 返回x左侧概率曲线下面积, 比如我们常说正态分布的情况下, 1.96个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathit" style="margin-right:0.03588em;">σ</span></span></span></span>两侧的面积是0.05, 所以单侧的面积就是0.025, 可以自己在excel中用<code>=NORM.S.INV(0.025)</code>验证一下. 这个公式最常用的就是求出特定统计水平下(比如0.05), 用来作为判断的临界统计值是多少, 这样就不用去查统计表了.</li>
+<li data-line="NaN" class="code-line code-line code-line"><code>.DIST</code>: 给定一个x, 返回x左侧概率分布曲线下面积(当cumulative参数为TRUE),或x处概率分布曲线的值(当cumulative参数为FALSE)</li>
+<li data-line="NaN" class="code-line code-line code-line"><code>.TEST</code>: 进行统计检验, 返回精确的p值</li>
+</ol>
+</li>
+<li data-line="NaN" class="code-line code-line code-line">正态分布曲线:
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">一个正态分布(比如平均值是50, 标准差是8), 某个值(比如40)左侧的正态分布曲线下面积: <code>=NORM.DIST(40,50,8,TRUE)</code></li>
+<li data-line="NaN" class="code-line code-line code-line">一个正态分布(比如平均值是50, 标准差是8),两个值(比如40到60)之间的正态分布曲线下面积: <code>=NORM.DIST(60,50,8,TRUE)-NORM.DIST(40,50,8,TRUE)</code></li>
+<li data-line="NaN" class="code-line code-line code-line">一个正态分布曲线,(比如均值是50, 标准差是8), 那两个临界值可以让外侧曲线下面积是5%? <code>=NORM.INV(0.025,50,8)</code>, <code>=NORM.INV(1-0.025,50,8)</code></li>
+</ol>
+</li>
+<li data-line="NaN" class="code-line code-line code-line">T分布曲线:
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">一个t分布曲线, (单样本, 样本量50, 自由度=50-1=49). t=1.98时, 双尾面积(正负1.98以外的面积): <code>=T.DIST.2T(1.98, 49)</code></li>
+<li data-line="NaN" class="code-line code-line code-line">一个t分布曲线, (单样本, 样本量50, 自由度=50-1=49). t=1.98时, 左侧的面积: <code>=T.DIST(1.98,49,TRUE)</code></li>
+<li data-line="NaN" class="code-line code-line code-line">一个t分布曲线, (单样本, 样本量50, 自由度49), 双侧面积0.05, 临界值t是多少? <code>=T.INV.2T(0.05,49)</code></li>
+</ol>
+</li>
+</ol>
+
+</body></html>
