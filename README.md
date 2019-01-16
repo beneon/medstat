@@ -33,3 +33,5 @@ date | time | content
 1. [Excel常见公式](cheatsheet/excel常见公式.pdf)
 2. [anaconda安装过程视频](cheatsheet/anaconda_install.avi)
 3. [n-1是怎么来的](cheatsheet/sigma_n_1.mp4)
+4. [医学统计学：正态分布，中值极限定理还有I和II类错误](https://www.bilibili.com/video/av40456614)
+5. [题解01](cheatsheet/题解01.pdf)
